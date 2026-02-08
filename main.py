@@ -58,14 +58,14 @@ def retry_prompt():
 
 def show_instructions():
     print("\nInstructions:")
-    print("────────────────────────────────────────────")
+    print("─"*50)
     print("1. Set a range by providing a start and end integer.")
     print("2. A random number will be generated within that range.")
     print("3. Try to guess the number.")
     print("4. You will receive feedback and hints after each guess.")
     print("5.  Points are based on how few guesses you take.")
     print("6.  You can play multiple rounds and accumulate your total score!")
-    print("────────────────────────────────────────────\n")
+    print("─"*50+"\n")
 
 def show_summary(round_number, attempts, round_score, total_score):
     print("\n" + "═"*50)
@@ -111,6 +111,8 @@ def play_game():
             print(f"\n🎯 Game Over! Your final total score: {total_score} 🎯")
             print("Thanks for playing the Ultimate Number Guessing Game!")
             break
+
+
 
 def main():
     print_banner()
